@@ -9,6 +9,7 @@ import { StepFive } from './components/StepFive';
 import { ChatBot } from './components/ChatBot';
 import { ProgressIndicator } from './components/ProgressIndicator';
 import { Header } from './components/Header';
+import { translations } from './utils/translations';
 
 export type Language = 'en' | 'fi' | 'sv' | 'zh' | 'ru';
 
@@ -211,9 +212,9 @@ export default function App() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <h1 className="mb-4">Application Complete!</h1>
+            <h1 className="mb-4">{translations[applicationData.language || 'en'].complete.title}</h1>
             <p className="text-gray-600 mb-6">
-              Thank you for completing your application. You will receive an email shortly with your meeting details and a link to edit your application if needed.
+              {translations[applicationData.language || 'en'].complete.message}
             </p>
             <button
               onClick={() => {
@@ -227,7 +228,7 @@ export default function App() {
               }}
               className="px-6 py-3 bg-[#0050BB] text-white rounded-lg hover:bg-[#012169] transition-colors"
             >
-              Start New Application
+              {translations[applicationData.language || 'en'].complete.newApplication}
             </button>
           </div>
         )}

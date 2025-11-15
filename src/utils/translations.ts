@@ -148,7 +148,12 @@ export const translations: Record<Language, any> = {
       title: 'AI Assistant',
       placeholder: 'Ask me anything about starting your business...',
       send: 'Send',
-      greeting: 'Hello! I\'m here to help you with any questions about starting your business in Espoo. Feel free to ask me anything!',
+      greeting: 'Hi! I\'m here to help you with questions about starting your business in Espoo. Feel free to ask!',
+    },
+    complete: {
+      title: 'Application Complete!',
+      message: 'Thank you for completing your application. You will receive an email shortly with your meeting details and a link to edit your application if needed.',
+      newApplication: 'Start New Application',
     },
   },
   fi: {
@@ -300,6 +305,11 @@ export const translations: Record<Language, any> = {
       send: 'Lähetä',
       greeting: 'Hei! Olen täällä auttamassa sinua kysymyksissä yrityksen perustamisesta Espoossa. Kysy vapaasti!',
     },
+    complete: {
+      title: 'Hakemus valmis!',
+      message: 'Kiitos hakemuksen lähettämisestä. Saat pian sähköpostin tapaamisen tiedoista ja linkin hakemuksen muokkaamiseen, jos tarvitset.',
+      newApplication: 'Aloita uusi hakemus',
+    },
   },
   sv: {
     common: {
@@ -449,6 +459,11 @@ export const translations: Record<Language, any> = {
       placeholder: 'Fråga mig vad som helst om att starta ditt företag...',
       send: 'Skicka',
       greeting: 'Hej! Jag är här för att hjälpa dig med frågor om att starta ditt företag i Esbo. Fråga gärna!',
+    },
+    complete: {
+      title: 'Ansökan slutförd!',
+      message: 'Tack för att du har skickat din ansökan. Du kommer snart att få ett e-postmeddelande med mötesinformation och en länk för att redigera din ansökan om det behövs.',
+      newApplication: 'Börja ny ansökan',
     },
   },
   zh: {
@@ -600,6 +615,11 @@ export const translations: Record<Language, any> = {
       send: '发送',
       greeting: '你好！我在这里帮助您解答在埃斯波创业的任何问题。请随时提问！',
     },
+    complete: {
+      title: '申请完成！',
+      message: '感谢您完成申请。您将很快收到一封包含会面详情和编辑申请链接的电子邮件，如果需要的话。',
+      newApplication: '开始新申请',
+    },
   },
   ru: {
     common: {
@@ -749,6 +769,11 @@ export const translations: Record<Language, any> = {
       placeholder: 'Спросите меня о создании бизнеса...',
       send: 'Отправить',
       greeting: 'Здравствуйте! Я здесь, чтобы помочь вам с любыми вопросами о создании бизнеса в Эспоо. Спрашивайте!',
+    },
+    complete: {
+      title: 'Заявка отправлена!',
+      message: 'Спасибо, что завершили заявку. Вы скоро получите электронное письмо с подробностями встречи и ссылкой для редактирования заявки, если это необходимо.',
+      newApplication: 'Начать новую заявку',
     },
   },
 };
