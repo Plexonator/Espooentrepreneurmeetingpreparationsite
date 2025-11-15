@@ -80,7 +80,7 @@ export function StepFour({ data, onUpdate, onNext, onBack, language }: StepFourP
               onValueChange={(value) => onUpdate({ financingStatus: value })}
             >
               <SelectTrigger>
-                <SelectValue placeholder="Select financing status" />
+                <SelectValue placeholder={t.step4.financingPlaceholder} />
               </SelectTrigger>
               <SelectContent>
                 {Object.entries(t.step4.financingOptions).map(([key, label]) => (

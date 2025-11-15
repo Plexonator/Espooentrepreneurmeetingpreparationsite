@@ -16,16 +16,7 @@ interface LandingPageProps {
   language: Language;
 }
 
-const categories = [
-  'Technology',
-  'Retail',
-  'Finance',
-  'Entertainment',
-  'Hospitality',
-  'Manufacturing',
-  'Other',
-  "I don't know yet"
-];
+const categoryKeys = ['technology', 'retail', 'finance', 'entertainment', 'hospitality', 'manufacturing', 'other', 'dontKnow'] as const;
 
 export function LandingPage({ data, onUpdate, onNext, language }: LandingPageProps) {
   const [errors, setErrors] = useState<Record<string, boolean>>({});
@@ -142,9 +133,9 @@ export function LandingPage({ data, onUpdate, onNext, language }: LandingPagePro
                 <SelectValue placeholder={t.landing.categoryPlaceholder} />
               </SelectTrigger>
               <SelectContent>
-                {categories.map((category) => (
-                  <SelectItem key={category} value={category}>
-                    {category}
+                {categoryKeys.map((key) => (
+                  <SelectItem key={key} value={key}>
+                    {t.landing.categories[key]}
                   </SelectItem>
                 ))}
               </SelectContent>

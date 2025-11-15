@@ -92,23 +92,23 @@ export function StepFive({ data, onUpdate, onComplete, onBack, language }: StepF
           </div>
 
           <div className="border-t pt-6">
-            <h3 className="text-[#012169] mb-4">Application Summary</h3>
+            <h3 className="text-[#012169] mb-4">{t.step5.summaryTitle}</h3>
             <div className="space-y-3 text-gray-700">
               <div className="flex gap-2">
-                <span className="text-gray-500">Name:</span>
+                <span className="text-gray-500">{t.step5.summaryName}</span>
                 <span>{data.name}</span>
               </div>
               <div className="flex gap-2">
-                <span className="text-gray-500">Email:</span>
+                <span className="text-gray-500">{t.step5.summaryEmail}</span>
                 <span>{data.email}</span>
               </div>
               <div className="flex gap-2">
-                <span className="text-gray-500">Business Category:</span>
-                <span>{data.category}</span>
+                <span className="text-gray-500">{t.step5.summaryCategory}</span>
+                <span>{data.category && t.landing.categories[data.category as keyof typeof t.landing.categories] ? t.landing.categories[data.category as keyof typeof t.landing.categories] : data.category}</span>
               </div>
               <div className="flex gap-2">
-                <span className="text-gray-500">Registered:</span>
-                <span>{data.isRegistered ? 'Yes' : 'No'}</span>
+                <span className="text-gray-500">{t.step5.summaryRegistered}</span>
+                <span>{data.isRegistered ? t.step5.summaryYes : t.step5.summaryNo}</span>
               </div>
             </div>
           </div>
