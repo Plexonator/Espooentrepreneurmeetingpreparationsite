@@ -124,16 +124,16 @@ export function ChatBot({ language }: ChatBotProps) {
           </div>
 
           {/* Messages */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-4">
+          <div className="flex-1 overflow-y-auto overflow-x-hidden p-4 space-y-4">
             {messages.map((message) => (
               <div
                 key={message.id}
                 className={`flex ${message.sender === 'user' ? 'justify-end' : 'justify-start'}`}
               >
                 <div
-                  className={`max-w-[80%] rounded-lg p-3 ${message.sender === 'user'
-                      ? 'bg-[#0050BB] text-white'
-                      : 'bg-gray-100 text-gray-900'
+                  className={`max-w-[80%] rounded-lg p-3 break-words ${message.sender === 'user'
+                    ? 'bg-[#0050BB] text-white'
+                    : 'bg-gray-100 text-gray-900'
                     }`}
                 >
                   <p className="text-sm">{message.text}</p>
