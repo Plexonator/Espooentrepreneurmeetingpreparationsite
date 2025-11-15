@@ -25,7 +25,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      model: "deepseek-ai/DeepSeek-V3-0324",
+      model: "soob3123/GrayLine-Qwen3-8B",
       messages: [{ role: "user", content: message }],
     }),
   });
